@@ -1,0 +1,11 @@
+#Implement R script to check the given year is leap year or not.
+num=2011
+if(num%%4==0 && nums<1000){
+ print("leap year")
+}else if(num%%1000==0 && num%%4000==0){
+  print("leap year")
+}else{
+  print("not a leap year")
+}
+#output:
+"not a leap year"

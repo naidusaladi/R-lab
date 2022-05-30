@@ -1,0 +1,19 @@
+#Implement R Script to read person's age from keyboard and display whether he is 
+#eligible for voting or not(age >=18 are eligible).
+age=readline("enter your age:")
+age=as.integer(age)
+print(age);
+if(age>17)
+{
+    print('eligible for voting')
+}
+else
+{
+    print('Not eligible for voting')
+}
+#input1: 18
+#output1: "eligible for voting"
+#input1: 17
+#output1: "Not eligible for voting"
+
+

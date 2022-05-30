@@ -1,0 +1,54 @@
+#Implement R script to create a list
+lst1<-list("naidu","siva","balu")
+print(lst1)
+#output
+#[[1]]
+#[1] "naidu"
+
+#[[2]]
+#[1] "siva"
+
+#[[3]]
+#[1] "balu"
+#-----------------------
+#Implement R script to Accessing list elements
+print(lst1[2])
+#output
+#[[1]]
+#[1] "siva"
+#-----------------------
+#Implement R script to Changing item value
+lst1[1]="raju"
+print(lst1)
+#output:
+#[[1]]
+#[1] "raju"
+
+#[[2]]
+#[1] "siva"
+
+#[[3]]
+#[1] "balu"
+#--------------------------
+#Implement R script to merge two or more lists
+lst2=list(1,2,3)
+lst3=c(lst1,lst2)
+print(lst3)
+#output
+[[1]]
+[1] "raju"
+
+[[2]]
+[1] "siva"
+
+[[3]]
+[1] "balu"
+
+[[4]]
+[1] 1
+
+[[5]]
+[1] 2
+
+[[6]]
+[1] 3

@@ -1,0 +1,75 @@
+#VARIABLE DECLERATION IN R LANGUAGE
+name<-'SubrahmanyamNaidu' #We can declare a varible using '=' or '->' or '<-' or '->>' or '<<-'
+age=18                    #here we use '=' for initilation and decleration of varible 'age'
+97->marks                 #here we assign 97 for marks using '->'
+print(name)
+print(age)
+print(marks)
+#output:
+"SubrahmanyamNaidu"
+18
+97
+#---------------------------------------------------
+#BASIC DATA TYPES
+#1.LOGICAL
+#2.NUMERIC
+#3.INTEGER
+#CHARACTER
+name='subbu'
+age<-19L       #to initisize a integer type value we have to end the number with 'L'
+79->marks      #if you don't put 'L' in the end it is considerd as numeric TYPE
+percentage=7.5 #it also belong to numeric type
+class(name)    #class gives which class that varible belongs to.(you will know more in next pages)
+class(age)
+class(marks)
+class(percentage)
+#output:
+"character"
+"integer"
+"numeric"
+"numeric"
+#---------------------------------------------------
+#BASIC OPERATIONS
+#___Mathematical____
+#1.ADDITON:
+#2.substraction
+#3.multiplication
+#4.devision
+#5.floor division
+#6.modules
+a=20
+b=30
+c<-a+b  #ADDITON
+d=b-a   #substraction
+e=b/a   #division
+f=a*b   #multiplication
+g=b%/%a #floor division
+h=b%%a  #modules(reminder for division of b/a)
+print(c)
+print(d)
+print(e)
+print(f)
+print(g)
+print(h)
+#output:
+50
+10
+1.5
+600
+1
+10
+#LOGICAL OPERATIONS
+#1.AND(&&)
+#2.OR(||)
+#3.NOT(!)
+
+a=1 && 0 #AND
+b=1 || 0 #OR
+c=!1     #NOT
+print(a)
+print(b)
+print(c)
+#output:
+FALSE
+TRUE
+FALSE

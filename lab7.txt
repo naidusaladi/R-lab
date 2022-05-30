@@ -1,0 +1,84 @@
+#Implement R Script to perform matrix opertion 
+# a matrix is a two dimensional data set with colums and rows
+#Implement of matrix
+mat<-matrix(c(1,2,3,4,5,6),nrow=3,ncol=2)
+print(mat)
+#output:
+ 
+#     [,1] [,2]
+#[1,]    1    4
+#[2,]    2    5
+#[3,]    3    6
+#--------------------------------
+#Accessing of matrix items
+mat2=matrix(c('naidu','subbu','chinna','balu'),nrow=2,ncol=2)
+print(mat2[1,2])
+#output:
+#[1] "chinna"
+#------------------------------
+#The whole row can be accessed if you specify a comma after the number in the bracket
+mat3=matrix(c('game','freefire','pubg','roman'),nrow=2,ncol=2)
+print(mat3[2,])
+#output:
+#[1] "freefire" "roman"
+#-------------------------------
+#The whole column can be accessed if you specify a comma before the number in the bracket
+mat4=matrix(c("kohli",'dhoni','rohit','abd'),nrow=2,ncol=2)
+print(mat4[,2])
+#output:
+#[1] "rohit" "abd"
+#-----------------------------
+#Accessing More Than One Row
+mat5=matrix(c('ravi','sun','surya','sarva','krishna','leela'),nrow=3,ncol=2)
+print(mat5[c(1,2),])
+#output:
+# 
+#     [,1]   [,2]     
+#[1,] "ravi" "sarva"  
+#[2,] "sun"  "krishna"
+#-----------------------------
+#Accessing More Than One Column
+print(mat5[,c(1,2)])
+#output:
+#    [,1]    [,2]     
+#[1,] "ravi"  "sarva"  
+#[2,] "sun"   "krishna"
+#[3,] "surya" "leela"
+#-------------------------------
+#Accessing Rows and Columns
+mat6=cbind(mat5,c("ram",'bheem',"sita"))
+print(mat6)
+#output:
+#    [,1]    [,2]      [,3]   
+#[1,] "ravi"  "sarva"   "ram"  
+#[2,] "sun"   "krishna" "bheem"
+#[3,] "surya" "leela"   "sita" 
+mat7=rbind(mat6,c('n1',"n2","n3"))
+print(mat7)
+#output:
+#     [,1]    [,2]      [,3]   
+#[1,] "ravi"  "sarva"   "ram"  
+#[2,] "sun"   "krishna" "bheem"
+#[3,] "surya" "leela"   "sita" 
+#[4,] "n1"    "n2"      "n3"   
+#--------------------------------------
+#Removing Rows and Columns
+#Removing first row and first columm
+mat8=mat7[-c(1),-c(1)]
+print(mat8)
+#output:
+#     [,1]      [,2]   
+#[1,] "krishna" "bheem"
+#[2,] "leela"   "sita" 
+#[3,] "n2"      "n3"
+#----------------------------------------
+#Check if an Item Exists
+print('krishna' %in% mat8)
+#output:
+#[1] TRUE
+#-----------------------------------------
+#Number of Rows and Columns
+dim(mat8)
+#output
+#[1] 3 2
+
